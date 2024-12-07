@@ -29,18 +29,16 @@ function Weather() {
         <li> Thursday 12:00 AM</li>
         <li>Rain and snow</li>
       </ul>
-      <div className="row">
+      <div className="row" mt-3>
         <div className="col-6">
           <div className="clearfix">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/snow_s_rain.png"
               alt="Rain and snow"
-              className="float-left"
             ></img>
-            <div className="float-left">
-              <span className="temperature">6</span>
-              <span className="unit">°C</span>
-            </div>
+
+            <span className="temperature">6</span>
+            <span className="unit">°C</span>
           </div>
         </div>
         <div className="col-6">
