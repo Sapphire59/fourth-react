@@ -15,7 +15,7 @@ function WeatherInfo(props) {
       <div className="row" mt-3>
         <div className="col-6">
           <div className="clearfix">
-            <WeatherIcon icon={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={52} />
 
             <span className="temperature">
               {Math.round(props.data.temperature)}
