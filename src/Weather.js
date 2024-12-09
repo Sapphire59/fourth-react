@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
-
-
 import "./Weather.css";
 
 function Weather(props) {
@@ -60,7 +58,7 @@ function Weather(props) {
               <input
                 type="submit"
                 value="Enter a city"
-                className="btn btn-primary w-100"
+                className="btn btn-danger w-100"
               />
             </div>
           </div>
