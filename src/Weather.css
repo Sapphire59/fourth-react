@@ -13,12 +13,12 @@
 }
 
 .Weather h1 {
-  color: #8c999a;
+  color: #2772db;
   line-height: 29px;
   display: block;
   margin: 20px 0 0 0;
   font-size: 26px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .Weather img {
@@ -32,7 +32,7 @@
   font-weight: bold;
   font-size: 64px;
   font-weight: 400;
-  color: #070f4e;
+  color: #4f7097;
   line-height: 80px;
   position: relative;
   top: 20px;
