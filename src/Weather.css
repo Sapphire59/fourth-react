@@ -13,36 +13,38 @@
 }
 
 .Weather h1 {
-  color: #2772db;
+  color: #e2c85b;
   line-height: 29px;
   display: block;
   margin: 20px 0 0 0;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: bold;
 }
 
-.Weather img {
-  height: 64px;
+.Weather canvas {
+  height: 60px;
+  width: 60px;
 
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 10px 5px;
 }
 
 .Weather .temperature {
   font-weight: bold;
   font-size: 64px;
   font-weight: 400;
-  color: #4f7097;
+  color: #393e46;
   line-height: 80px;
   position: relative;
-  top: 20px;
+  top: -3px;
+  margin-left: 10px;
 }
 
 .Weather .unit {
   font-size: 16px;
   font-weight: 400;
   position: relative;
-  top: -18px;
+  top: -43px;
   margin: 0;
   line-height: 1;
   color: black;
