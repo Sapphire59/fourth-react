@@ -14,23 +14,21 @@ function Weather(props) {
     setWeatherData({
       ready: true,
 
-      coordinates: response.data.coord,
-      temperature: response.data.main.temp,
-      humidity: response.data.main.humidity,
-      description: response.data.weather[0].description,
-      date: new Date(response.data.dt * 1000),
-
-      icon: response.data.weather[0].icon,
-
+      coordinates: response.data.coordinates,
+      temperature: response.data.temperature.current,
+      humidity: response.data.temperature.humidity,
+      date: new Date(response.data.time * 1000),
+      description: response.data.condition.description,
+      icon: response.data.condition.icon,
+      city: response.data.city,
       wind: response.data.wind.speed,
-      city: response.data.name,
     });
   }
 
   function search() {
-    const apiKey = "c6f8ef4575250284954db9f4dfa7a996";
+    let apiKey = "7eot7c9e36304bbfae357f4a433400e3";
 
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-
+import axios from "axios";
 import WeatherTemperature from "./WeatherTemperature";
 
 import WeatherIcon from "./WeatherIcon";
@@ -18,7 +18,7 @@ function WeatherInfo(props) {
         <div className="col-6">
           <div className="clearfix">
             <div className="float-left">
-              <WeatherIcon code={props.data.icon} size={64} />
+              <WeatherIcon code={props.data.icon} size={52} />
             </div>
             <div className="float-left">
               <WeatherTemperature celsius={props.data.temperature} />
