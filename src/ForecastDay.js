@@ -12,9 +12,19 @@ function ForecastDay(props) {
     return `${temperature}°`;
   }
 
+  function day() {
+    let date = new Date(props.data.time * 1000);
+
+    let day = date.getDay();
+
+    let days = ["Sun", "Mon", "Tues", "Weds", "Thurs", "Fri", "Sat"];
+
+    return days[day];
+  }
+
   return (
     <div>
-      <div className="ForecastDay">{props.data.time}</div>
+      <div className="ForecastDay">{day()}</div>
       <WeatherIcon code={props.data.condition.icon} size={36} />
       <div className="ForecastTemperatures">
         <span className="ForecastTemperatures-max">{maxTemperature()}</span>
